@@ -44,7 +44,7 @@ class RedisClient {
    * @return {undefined}  No return
    */
   async set(key, value, duration) {
-    this.client.setex(key, duration, value);
+    this.client.setEx(key, duration, value);
   }
 
   /**
